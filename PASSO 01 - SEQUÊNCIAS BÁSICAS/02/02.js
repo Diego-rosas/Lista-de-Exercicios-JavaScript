@@ -10,7 +10,7 @@ const rl = readline.createInterface({
 });
 
 rl.question('Qual é o seu nome? ', (nome) => {
-
+    
     console.log('Olá', nome,', é um prazer te conhecer!');
     rl.close();
 });
