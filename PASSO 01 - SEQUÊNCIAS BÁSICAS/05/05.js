@@ -1,7 +1,7 @@
 // Exercicio 05
 // Função : Calcula a media de duas notas e mostra o resultado.
-// Autor :
-// Data : 20/02/2021
+// Autor : Diego Rosas
+// Data : 07/05/2024
 // Seção de Declarações 
 
 const readline = require ('readline');
