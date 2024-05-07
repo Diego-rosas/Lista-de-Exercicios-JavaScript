@@ -12,27 +12,13 @@ const rl = readline.createInterface({
 })
 
 rl.question('Digite o nome do funcionario(a): ', (nome) => {
-  let nomeDoFuncionario = nome;
-  console.log('O funcionario(a)', nomeDoFuncionario, 'teve um salário de R$',',00 em','.');   
-  rl.close();
+    rl.question('Digite o salario do funcionario(a): ', (salario) => {
+        rl.question('Digite o mês correspodente ao salario: ', (mes) => {
+            const nomeDoFuncionario = nome;
+            const salarioDoFuncionario = salario;
+            const mesDoSalario = mes;
+            console.log('O funcionario(a)', nomeDoFuncionario, 'teve um salário de R$', salarioDoFuncionario, ',00 em', mesDoSalario, '.');   
+            rl.close();
+        });
+    });
 });
-
-//console.log('O funcionario(a)', nomeDoFuncionario, 'teve um salário de R$',',00 em','.'); 
-/*'Digite o salario do funcionario(a): ', (salario) => {
-    const salarioDoFuncionario = salario;
-    console.log(salarioDoFuncionario);
-    rl.close();
-}*/
-
-/*rl.question('Digite o salario do funcionario(a): ', (salario) => {
-    const salarioDoFuncionario = salario;
-    
-})
-
-rl.question('Digite o mês correspodente ao salario: ', (mes) => {
-    const mesDoSalario = mes;
-    
-})*/
-
-//console.log('O funcionario(a)', nomeDoFuncionario, 'teve um salário de R$', salarioDoFuncionario,',00 em', mesDoSalario,'.')
-
